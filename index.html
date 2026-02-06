@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Anjali Bbu 🌹</title>
+<style>
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffe6eb;
+    font-family: Arial, sans-serif;
+    text-align:center;
+  }
+  .box{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    max-width:320px;
+  }
+  h1{ color:#ff2d55; }
+  p{ font-size:18px; }
+  button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+  }
+  .yes{ background:#ff2d55; color:#fff; }
+  .no{ background:#ddd; }
+  img{ width:180px; margin-top:15px; }
+</style>
+</head>
+<body>
+
+<div class="box" id="gate">
+  <h1>Hey Anjali Bbu 🥺❤️</h1>
+  <p>Do you love me? 💖</p>
+  <button class="yes" onclick="openLove()">Yes 😘</button>
+  <button class="no" onclick="askAgain()">No 🙈</button>
+</div>
+
+<div class="box" id="content" style="display:none;">
+  <h1>Happy Rose Day 🌹❤️</h1>
+  <p>
+    Ye rose sirf phool nahi,<br>
+    meri feelings ka symbol hai 💖<br><br>
+    Tum ho isliye sab kuch special lagta hai 😊
+  </p>
+  <!-- Kiss GIF (same type as before) -->
+  <img src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif" alt="kiss gif">
+</div>
+
+<script>
+function openLove(){
+  document.getElementById('gate').style.display='none';
+  document.getElementById('content').style.display='block';
+}
+function askAgain(){
+  alert("Arey nahi 😅💔\nSocho thoda…\nDo you love me? ❤️");
+}
+</script>
+
+</body>
+</html>
